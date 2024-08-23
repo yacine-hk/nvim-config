@@ -38,7 +38,6 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 vim.keymap.set("n", "<C-n>", ":Ex<CR>")
 
@@ -51,3 +50,7 @@ vim.keymap.set('n', '<leader>u', "<cmd>UndotreeToggle<cr><cmd>UndotreeFocus<cr>"
 
 
 vim.keymap.set("n", "<leader>bd", ":bd<CR>")
+
+-- replace
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
